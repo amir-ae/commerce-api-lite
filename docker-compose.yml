@@ -1,0 +1,42 @@
+version: "3.5"
+name: polar
+  
+networks:
+  polar:
+    driver: bridge
+    
+services:
+  polar.commerce.api:
+    container_name: polar-commerce-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: polar.commerce.api
+    env_file:
+      - containers/api/api.env
+    networks:
+      - polar
+    ports:
+      - "5002:5002"
+    depends_on:
+      polar.commerce.db:
+        condition: service_healthy
+  
+  polar.commerce.db:
+    container_name: polar-commerce-db
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    restart: always
+    volumes:
+      - ./containers/db_data:/var/lib/postgresql/data
+    networks:
+      - polar
+    env_file:
+      - containers/db/db.env
+    healthcheck:
+      test: [ "CMD-SHELL", "sh -c 'pg_isready -U postgres -d Commerce'" ]
+      interval: 60s
+      timeout: 30s
+      retries: 5
+      start_period: 80s

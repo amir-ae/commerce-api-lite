@@ -1,0 +1,45 @@
+[
+  {
+    "Id": {
+      "Value": "1"
+    },
+    "FirstName": "Rae",
+    "MiddleName": null,
+    "LastName": "Mccall",
+    "FullName": "Mccall Rae",
+    "PhoneNumber": { "Value": "(321) 682-8918", "CountryId": null, "Description": null },
+    "CityId": { "Value": 1 },
+    "Address": "San Gregorio",
+    "Role": 1,
+    "ProductIds": [{ "Value": "PA" }],
+    "OrderIds": [{ "Value": "A", "CentreId": "14424963-25e4-4731-8501-461750d27037" }]
+  },
+  {
+    "Id": {
+      "Value": "2"
+    },
+    "FirstName": "Aspen",
+    "MiddleName": null,
+    "LastName": "Coffey",
+    "FullName": "Aspen Coffey",
+    "PhoneNumber": { "Value": "514-374-2937", "CountryId": null, "Description": null },
+    "CityId": { "Value": 2 },
+    "Address": "Klerksdorp",
+    "Role": 1,
+    "ProductIds": [{ "Value": "PB" }, { "Value": "PC" }]
+  },
+  {
+    "Id": {
+      "Value": "3"
+    },
+    "FirstName": "Leonard",
+    "MiddleName": null,
+    "LastName": "Sandoval",
+    "PhoneNumber": { "Value": "(576) 452-6868", "CountryId": null, "Description": null },
+    "CityId": { "Value": 3 },
+    "Address": "Inírida",
+    "Role": 1,
+    "ProductIds": null,
+    "IsDeleted": true
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "Id": {
+      "Value": "PA"
+    },
+    "Brand": "TCL",
+    "Model": "L40S60A",
+    "SerialId": null,
+    "OwnerId": {
+      "Value": "1"
+    },
+    "DealerId": null,
+    "DeviceType": null,
+    "PanelModel": null,
+    "PanelSerialNumber": null,
+    "WarrantyCardNumber": null,
+    "DateOfPurchase": null,
+    "OrderIds": [{ "Value": "A", "CentreId": "14424963-25e4-4731-8501-461750d27037" }]
+  },
+  {
+    "Id": {
+      "Value": "PB"
+    },
+    "OwnerId": {
+      "Value": "2"
+    },
+    "Brand": "POLARLINE ",
+    "Model": "32PL13TC-SM "
+  },
+  {
+    "Id": {
+      "Value": "PC"
+    },
+    "OwnerId": {
+      "Value": "2"
+    },
+    "Brand": "STARWIND",
+    "Model": "SW-LED40BA201",
+    "IsDeleted": true
+  }
+]

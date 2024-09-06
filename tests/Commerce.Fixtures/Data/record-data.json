@@ -1,0 +1,28 @@
+{
+  "customer": {
+    "Id": {
+      "Value": "1"
+    },
+    "FirstName": "Rae",
+    "MiddleName": null,
+    "LastName": "Mccall",
+    "FullName": "Mccall Rae",
+    "PhoneNumber": { "Value": "(321) 682-8918", "CountryId": null, "Description": null },
+    "CityId": { "Value": 1 },
+    "Address": "San Gregorio",
+    "Role": 1,
+    "ProductIds": [{ "Value": "PA" }],
+    "OrderIds": [{ "Value": "A", "CentreId": "14424963-25e4-4731-8501-461750d27037" }]
+  },
+  "product": {
+    "Id": {
+      "Value": "PA"
+    },
+    "Brand": "TCL",
+    "Model": "L40S60A",
+    "OwnerId": {
+      "Value": "1"
+    },
+    "OrderIds": [{ "Value": "A", "CentreId": "14424963-25e4-4731-8501-461750d27037" }]
+  }
+}

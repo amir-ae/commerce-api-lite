@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AWSSDK.SQS" Version="3.7.300" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.0" />
+        <PackageReference Include="Mapster.DependencyInjection" Version="1.0.2-pre01" />
+        <PackageReference Include="MediatR" Version="12.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Commerce.API.Contract\Commerce.API.Contract.csproj" />
+        <ProjectReference Include="..\Commerce.Domain\Commerce.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Common\Commands\CreateCustomerCommand.cs" />
+      <Compile Remove="Common\Commands\CreateCustomerCommandValidator.cs" />
+      <Compile Remove="Common\Commands\CreateProductCommand.cs" />
+      <Compile Remove="Common\Commands\CreateProductCommandValidator.cs" />
+      <Compile Remove="Common\Commands\UpdateCustomerCommand.cs" />
+      <Compile Remove="Common\Commands\UpdateCustomerCommandValidator.cs" />
+      <Compile Remove="Common\Commands\UpdateProductCommand.cs" />
+      <Compile Remove="Common\Commands\UpdateProductCommandValidator.cs" />
+    </ItemGroup>
+    
+</Project>
